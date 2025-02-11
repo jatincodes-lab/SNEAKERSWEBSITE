@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  color: #333333;
+}
+nav {
+  height: 15%;
+  position: relative;
+}
+.topNav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topNav p {
+  position: relative;
+  font-size: 7px;
+  font-weight: 600;
+  left: 2px;
+}
+
+.topNav p::before {
+  content: " ";
+  display: inline-block; /* Ensures it behaves like a separate block before <p> */
+  width: 47%;
+  height: 3px;
+  background-color: #000000b6;
+  margin-bottom: 1px;
+  margin-right: 2px;
+}
+
+.topNav h1 {
+  font-weight: 800;
+  line-height: 17px;
+}
+
+.btmNav {
+  margin-top: 18px;
+  width: 90%;
+  display: flex;
+  background-color: #fff;
+  bottom: 0;
+  position: absolute;
+  justify-content: space-around;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btmNav .socialTags {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.btmNav .socialTags i {
+  margin: 5px 0px 0px 5px;
+  font-size: medium;
+  align-items: center;
+}
+
+.btmNav .ddMenu {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btmNav .ddMenu p {
+  cursor: pointer;
+  font-size: small;
+  font-weight: 600;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btmNav .search {
+  width: 10%;
+  position: relative;
+}
+
+.btmNav .search i {
+  position: absolute;
+  right: 0%;
+}
+
+.hero {
+  position: relative;
+  background-color: #f5f5f5;
+  margin-top: 40px;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  right: 80px;
+  left: 80px;
+}
+
+.hero .lhero {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  line-height: 50px;
+}
+
+.hero .rhero {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.hero .lhero h1 {
+  letter-spacing: 3px;
+  position: absolute;
+  font-size: 100px;
+  font-weight: 900;
+  right: -5%;
+  bottom: 35%;
+  z-index: 5;
+}
+
+.hero .lhero p {
+  position: absolute;
+  right: 0%;
+  bottom: 25%;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.hero .rhero p {
+  position: absolute;
+  left: 17%;
+  top: 53%;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero .rhero h1 {
+  letter-spacing: 3px;
+  position: absolute;
+  font-size: 100px;
+  font-weight: 900;
+  left: 9%;
+  bottom: 27%;
+  z-index: 3;
+}
+
+.hero .heroImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.hero .heroImg img {
+  width: 100%;
+  height: auto;
+  transform: rotate(45deg);
+  object-fit: cover;
+}
+
+.featured {
+  position: relative;
+  margin-top: 10px;
+  height: 500px;
+  width: 100%;
+}
+
+.featured .heading {
+  height: 100px;
+  position: relative;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.featured .heading h1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 80px;
+  letter-spacing: 20px;
+  font-weight: 900;
+  color: #f5f5f5;
+}
+
+.featured .heading h2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.featured .heading p {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.featuredCards {
+  display: flex;
+  position: absolute;
+  height: 400px;
+  width: 90%;
+  left: 80px;
+  right: 80px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.featuredCards .card {
+  position: relative;
+  height: 300px;
+  width: 250px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.featuredCards .card .img {
+  width: 250px;
+  height: 250px;
+  background-color: #f5f5f5;
+  padding-bottom: 20px;
+}
+
+.featuredCards .card .img img {
+  width: 250px;
+  height: 250px;
+  object-position: center;
+}
+
+.featuredCards .card .img .shoe2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  object-position: center;
+  object-fit: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.featuredCards .card .img .shoe3 {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  object-position: center;
+  object-fit: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.featuredCards .card .img .shoe4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  object-position: center;
+  object-fit: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.featuredCards .card h6 {
+  text-align: center;
+  margin: 10px;
+}
+
+.products {
+  position: relative;
+  margin-top: 10px;
+  height: 700px;
+  width: 100%;
+}
+
+.products .heading {
+  height: 100px;
+  position: relative;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.products .heading h1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 80px;
+  letter-spacing: 20px;
+  font-weight: 900;
+  color: #f5f5f5;
+}
+
+.products .heading h2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.products .heading p {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.products .productMain {
+  position: absolute;
+  width: 80%;
+  height: 600px;
+  display: flex;
+  left: 80px;
+  right: 80px;
+  margin-top: 10px;
+}
+
+.products .productMain .mainShoe .card {
+  height: 100%;
+  width: 500px;
+}
+
+.products .productMain .mainShoe .card .img {
+  width: 500px;
+  height: 500px;
+}
+
+.products .productMain .mainShoe .card .img img {
+  width: 500px;
+  height: 500px;
+}
+
+.products .productMain .mainShoe .card h6 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.products .productMain .productsCards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 90%;
+  left: 80px;
+  right: 80px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.products .productMain .productsCards .card {
+  width: 150px;
+  height: 250px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.products .productMain .productsCards .card .img img {
+  width: 150px;
+  height: 150px;
+}
+
+.products .productMain .productsCards .card .img {
+  width: 150px;
+  height: 150px;
+  background-color: #f5f5f5;
+}
+
+.products .productMain .productsCards .card h6 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.more {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.more button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
+  font-weight: 700;
+  background-color: #fff;
+  border: 1px solid #333333e3;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  background-color: #333333;
+  height: 100px;
+  width: 100%;
+}
+
+.lfooter {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.lfooter p {
+  color: #f5f5f585;
+}
+
+.lfooter span {
+  color: #f5f5f5;
+}
+
+.cfooter {
+  color: #f5f5f5;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cfooter p {
+  position: relative;
+  font-size: 7px;
+  font-weight: 600;
+  left: 2px;
+  bottom: 4px;
+  letter-spacing: 1.5px;
+}
+
+.cfooter p::before {
+  content: " ";
+  display: inline-block; /* Ensures it behaves like a separate block before <p> */
+  width: 50%;
+  height: 3px;
+  background-color: #f5f5f5;
+  margin-right: 2px;
+}
+
+.cfooter h1 {
+  font-weight: 800;
+  line-height: 17px;
+}
+
+.rfooter {
+  display: flex;
+  position: absolute;
+  color: #f5f5f5;
+  height: 100%;
+  right: 0;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
